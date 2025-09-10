@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宿題</title>
+</head>
+<body>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fcf9f9;
+}
+main{
+    margin: 80px auto;
+    padding: 24px 40px;
+    width: 400px;
+    height: 240px;
+    background: #fff;
+    text-align: center;
+}
+div{
+    margin: 0;
+}
+ul{
+    width: 100%;
+    margin: 24px;
+    padding: 4px 40px;
+}
+li {
+    padding: 4px;
+    width: 90%;
+    text-align: left;
+    position: relative;
+    user-select: none;
+}
+li::after{
+    content: '削除';
+    font-size: .8em;
+    color: #e74242;
+    position: absolute;
+    top: 4px;
+    right: -30px;
+    cursor: pointer;
+}
+input + input{
+    margin-left: 8px;
+}
+
+</style>
+    <main>
+        <input type="text" id="text">
+        <input type="submit" value="追加" id="btn">
+        <div>
+            <ul id="ul">
+            </ul>
+        </div>
+    </main>
+    
+
+
+    <script src="syukudai10.js"></script>
+</body>
+</html>
